@@ -24,7 +24,7 @@ document.addEventListener('click', event =>{
     }
 })
 
-function firstMassage() {
+function mainMassage() {
     massage.forEach((massage) => {
       massage.classList.add("active");
       setTimeout(() => {
@@ -49,7 +49,7 @@ function copyToClickboard(text){
 }
 
 function setRandomColors(isInitial){
-    if (isInitial) firstMassage()
+    if (isInitial) mainMassage()
 
     const colors = isInitial ? getColorsFromHash() : []
 
